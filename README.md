@@ -5,7 +5,7 @@ Single Page Web is basically just web pages or an application on the web which h
 
 About this application :
 It is a very basic application
-- If you navigate to any section say , the About section , you have to see on the right ,the view will change, so we have 3 sections to learn about Sphelele namely they re Dashboard, About and Picture.
+- If you navigate to any section say , the FullBodyPics  section , you have to see on the right ,the view will change, so we have 3 sections to learn about Sphelele namely they re Dashboard, FullBodyPics and FacePics.
 -The client side routing for forward slash (section)-- /Pictures.
 
 Using VSCode editor:
@@ -26,7 +26,12 @@ Inside the server.js file , I include few dependencies....express and path
 Create the express app - (const app = express().
 SEE ON THE CODE!
 
-After that important stage , I app.listen, start a server on process.emb.PORTS or default to 5050 then say anything to the listerner.
-Then start the server with command : node server.js
+After that important stage , I app.listen, start a server on process.emb or default to 5050 then say "server running..." to the listerner.
+Then start the server be in the frontend derictory and run this command : node server.js 
 Go to the browser and go to localhost:port5050
 
+ Create a static.js directory and add a file named index.js(frontend or client side entry point)
+
+ On the express ... When ever the route has /static , I will simply serve the static dir 
+
+ To kill the server run : npx kill-port 5050
